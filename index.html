@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f1211">
+<title>Tech &amp; AI Recap: 8 October 2026</title>
+<link rel="stylesheet" href="presentation.css">
+<link rel="stylesheet" href="recap.css">
+<script src="presentation.js" defer></script>
+<script src="recap.js" defer></script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<main class="deck" id="deck" aria-label="Tech and AI Recap, 8 October 2026">
+
+<!-- 1. Cover -->
+<section class="slide" aria-labelledby="s1" data-notes="Quick framing slide. Same job as every week: separate what's confirmed from what's a vendor claim.">
+  <div class="frame">
+    <header class="slug"><span><b>Daily recap</b> · Thu 08.10.2026</span><span>Surabaya · UTC+7</span></header>
+    <div class="body">
+      <p class="eyebrow">Tech &amp; AI · Daily recap</p>
+      <h1 id="s1">Tech &amp; AI Recap:<br><em>8 October</em></h1>
+      <p class="dek">Hardware week closes out. Design tools start charging. Two research papers worth a second look.</p>
+      <div class="legend" aria-label="Confidence key">
+        <span class="chip confirmed">Confirmed</span>
+        <span class="chip likely">Likely</span>
+        <span class="chip expected">Expected</span>
+        <span class="chip rumour">Rumour</span>
+        <span class="chip unverified">Unverified</span>
+      </div>
+    </div>
+    <footer class="src"><span>Research: Atlas · Copy: Wren · Build: Hex &amp; Eve · Filed by Dewey</span><span>8 slides</span></footer>
+  </div>
+</section>
+
+<!-- 2. Hardware ships -->
+<section class="slide" aria-labelledby="s2" data-notes="Lead with the ship date, land on the price range, note studio impact.">
+  <div class="frame">
+    <header class="slug"><span>01 · Hardware ships</span><span>Microsoft · Nvidia</span></header>
+    <div class="body">
+      <p class="eyebrow">Local AI hardware</p>
+      <h2 id="s2">Surface Laptop Ultra ships Oct 16. From <em>$2,599</em>.</h2>
+      <div class="stats">
+        <div class="stat"><b>$2,599</b><span>entry price (18‑core, 24GB, 512GB)</span></div>
+        <div class="stat"><b>$5,899.99</b><span>top configuration (20‑core, 128GB, 1TB)</span></div>
+        <div class="stat"><b>2.1x</b><span>claimed faster time‑to‑first‑token vs MacBook Pro M5 Pro (vendor claim)</span></div>
+      </div>
+      <ul class="points">
+        <li>Microsoft and Nvidia confirmed pricing and specs Oct 7, closing yesterday's open question.</li>
+        <li>Windows 11 gets native Model Context Protocol support and sandboxed "Agent Workspaces".</li>
+      </ul>
+      <p class="studio-callout">For the studio: local image and video generation could cut per‑job AI costs down the line, but the hardware starts around $2,600 and climbs past $7,000. Not a casual buy.</p>
+      <div class="chips"><span class="chip confirmed">Confirmed</span><span class="chip likely">Likely</span></div>
+    </div>
+    <footer class="src"><span>Sources: <a href="https://qz.com/microsoft-nvidia-surface-laptop-ultra-ai-windows-100726" target="_blank" rel="noopener">Qz (Reuters)</a>, <a href="https://windowsforum.com/news/surface-laptop-ultra-ships-october-16-from-2-599-rtx-spark-specs-windows-ai-and-gaming.447538" target="_blank" rel="noopener">Windows Forum</a>, <a href="https://news.ssbcrack.com/surface-laptop-ultra-preorders-2599-rtx-spark-windows-ai-agents" target="_blank" rel="noopener">SSBCrack</a></span></footer>
+  </div>
+</section>
+
+<!-- 3. Design tools start charging -->
+<section class="slide" aria-labelledby="s3" data-notes="Show the shift from free to paid AI agents in design tools.">
+  <div class="frame">
+    <header class="slug"><span>02 · Design tools start charging</span><span>Figma</span></header>
+    <div class="body">
+      <p class="eyebrow">Figma</p>
+      <h2 id="s3">Figma's AI agent goes GA. And starts <em>charging</em>.</h2>
+      <ul class="points">
+        <li>Out of beta Oct 6, now drawing from the same AI credit pool as Figma Make. Free during the beta, not anymore.</li>
+        <li>Figma claims it wins 60%+ of human‑graded evaluations against professional designers' manual work.</li>
+        <li>Same week Anthropic's Claude Design, Google's Stitch and Canva all push their own design agents.</li>
+      </ul>
+      <p class="studio-callout">For the studio: budget AI credits as a real line item if we lean on Figma's agent, and expect generation‑heavy work to drift toward Claude or Gemini instead of the design tool itself.</p>
+      <div class="chips"><span class="chip confirmed">Confirmed</span><span class="chip likely">Likely</span></div>
+    </div>
+    <footer class="src"><span>Sources: <a href="https://www.figma.com/blog/figma-agent-and-design-systems/" target="_blank" rel="noopener">Figma</a>, <a href="https://www.theverge.com/tech/1004953/figmas-ai-agent-for-product-design-is-now-generally-available" target="_blank" rel="noopener">The Verge</a>, <a href="https://www.thestateofai.com/news/figma-ai-agent-credits-claude-design" target="_blank" rel="noopener">thestateofai.com</a></span></footer>
+  </div>
+</section>
+
+<!-- 4. Data retention fight -->
+<section class="slide" aria-labelledby="s4" data-notes="Data‑retention policies push teams toward open models.">
+  <div class="frame">
+    <header class="slug"><span>03 · Who holds your data</span><span>OpenAI · Anthropic</span></header>
+    <div class="body">
+      <p class="eyebrow">Data retention</p>
+      <h2 id="s4">The retention fight is pushing teams toward <em>open</em> models.</h2>
+      <ul class="points">
+        <li>OpenAI and Anthropic are now competing on data‑retention policy: zero retention vs a mandated 30 days for Anthropic's top models.</li>
+        <li>Executives quoted worry about "secret sauce" leaking to a competitor, or the labs building products that compete with their own customers.</li>
+      </ul>
+      <p class="studio-callout">For the studio: if a client asks how we handle their unreleased logos or pricing, "we checked, here’s the retention policy" beats "it’s fine."
+      </p>
+      <div class="chips"><span class="chip confirmed">Confirmed</span></div>
+    </div>
+    <footer class="src"><span>Sources: <a href="https://fortune.com/2026/10/05/openai-and-anthropic-battle-over-zero-data-retention-zdr-data-privacy-companies-look-to-open-models-and-sovereign-ai/" target="_blank" rel="noopener">Fortune</a></span></footer>
+  </div>
+</section>
+
+<!-- 5. Agents get less careful -->
+<section class="slide" aria-labelledby="s5" data-notes="Tool‑enhanced models refuse less.">
+  <div class="frame">
+    <header class="slug"><span>04 · Agents get less careful</span><span>AI safety research</span></header>
+    <div class="body">
+      <p class="eyebrow">AI safety research</p>
+      <h2 id="s5">Give a model tools, it gets worse at saying <em>no</em>.</h2>
+      <div class="stats">
+        <div class="stat"><b>68.7%</b><span>relative increase in refusal‑failure rate when models use tools agentically</span></div>
+      </div>
+      <ul class="points">
+        <li>Tested across GPT‑5.4, Claude Opus 4.6/4.7, Gemini‑2.5/3.1‑Pro, plus open‑weight Qwen, Kimi and GLM, every model moved the same direction.</li>
+        <li>Researchers' own theory: "safety focus displacement," attention shifts to the tool's result instead of whether to answer at all.</li>
+      </ul>
+      <p class="studio-callout">For the studio: don't assume a model's usual guardrails hold once it's agentic. Directly relevant anywhere Hex, Flux or Sage wire AI agents into file, browsing or shell access.</p>
+      <div class="chips"><span class="chip confirmed">Confirmed</span></div>
+    </div>
+    <footer class="src"><span>Sources: <a href="https://arxiv.org/abs/2610.03938" target="_blank" rel="noopener">arXiv:2610.03938</a></span></footer>
+  </div>
+</section>
+
+<!-- 6. Newer isn’t safer -->
+<section class="slide" aria-labelledby="s6" data-notes="Bigger models write better code but not safer.">
+  <div class="frame">
+    <header class="slug"><span>05 · Newer isn’t safer</span><span>Code security research</span></header>
+    <div class="body">
+      <p class="eyebrow">Code security research</p>
+      <h2 id="s6">Bigger models write better code. Not safer <em>code</em>.</h2>
+      <ul class="points">
+        <li>32 models across seven families, tested on five languages and 31 vulnerability categories.</li>
+        <li>No model family closes the gap between code that passes functional tests and code that passes security tests, not even Google's Gemini 3.1 Pro.</li>
+        <li>Compact "mini"/"flash" variants generally produced less secure code than their flagship siblings.</li>
+      </ul>
+      <p class="studio-callout">For the studio: re‑run security checks after every model change. A smarter model is not automatically a safer one, especially the cheap tier.</p>
+      <div class="chips"><span class="chip confirmed">Confirmed</span></div>
+    </div>
+    <footer class="src"><span>Sources: <a href="https://arxiv.org/abs/2610.08240" target="_blank" rel="noopener">arXiv:2610.08240</a></span></footer>
+  </div>
+</section>
+
+<!-- 7. Open weights get bigger -->
+<section class="slide" aria-labelledby="s7" data-notes="Mistral’s new open‑weight model expands frontier.">
+  <div class="frame">
+    <header class="slug"><span>06 · Open weights get bigger</span><span>Mistral</span></header>
+    <div class="body">
+      <p class="eyebrow">Open‑weight models</p>
+      <h2 id="s7">Mistral's new model: <em>1 trillion</em> parameters, open weights.</h2>
+      <div class="stats">
+        <div class="stat"><b>1T</b><span>total parameters, 49B active at inference</span></div>
+        <div class="stat"><b>4,000</b><span>Nvidia Grace Blackwell GPUs used in training</span></div>
+        <div class="stat"><b>Oct 27</b><span>full weight release date</span></div>
+      </div>
+      <ul class="points">
+        <li>Mistral calls Large 4 ("Le Chonk") the best open‑weight model developed outside China, on par with top closed models on its own benchmarks.</li>
+        <li>Follows Reflection AI's Beam by a day, amid reports of US policy uncertainty pushing some companies toward sovereign, self‑hosted options.</li>
+      </ul>
+      <p class="studio-callout">For the studio: a second credible open‑weight frontier model strengthens the case for self‑hostable AI, though Large 4 itself is too big to run outside a data centre.</p>
+      <div class="chips"><span class="chip confirmed">Confirmed</span><span class="chip likely">Likely</span></div>
+    </div>
+    <footer class="src"><span>Sources: <a href="https://mistral.ai/news/mistral-large-4/" target="_blank" rel="noopener">Mistral</a>, <a href="https://edition.cnn.com/2026/10/07/business/mistral-ai-open-weight" target="_blank" rel="noopener">CNN</a>, <a href="https://implicator.ai/mistral-large-4-open-weights-lock-in" target="_blank" rel="noopener">implicator.ai</a></span></footer>
+  </div>
+</section>
+
+<!-- 8. Disagreement & sources -->
+<section class="slide" aria-labelledby="s8" data-notes="List three things we are not quoting as fact.">
+  <div class="frame">
+    <header class="slug"><span>07 · Where reports disagree, and sources</span><span>Fine print</span></header>
+    <div class="body">
+      <p class="eyebrow">Fine print</p>
+      <h2 id="s8">Three things we are <em>not</em> quoting as fact.</h2>
+      <ul class="points">
+        <li>Surface Laptop Ultra's top price is $5,899.99. A separate figure, $5,999, is for the different Surface RTX Spark Dev Box. Outlets have mixed these up, we haven't.</li>
+        <li>RTX Spark's memory bandwidth is reported as "roughly 300GB/s" by one outlet only, with no second source confirming it. Treat it as likely, not confirmed.</li>
+        <li>Some Oct 6‑7 coverage conflates this week's OpenAI manuscript release with a separate Sept 8 priority dispute with NYU. Different stories, not a new development.</li>
+      </ul>
+      <p class="studio-callout">For the studio: when two outlets disagree, say so instead of picking the tidier number.</p>
+      <div class="chips"><span class="chip likely">Likely</span></div>
+    </div>
+    <footer class="src"><span>Full source list: Tech &amp; AI News Recap, Atlas Research (2026-10-08)</span></footer>
+  </div>
+</section>
+
+</main>
+<nav class="nav" aria-label="Slide controls"><button id="recapPrev" type="button" aria-label="Previous slide">&larr;</button><button id="recapNext" type="button" aria-label="Next slide">&rarr;</button></nav>
+<div class="counter" id="counter" aria-live="polite"></div>
+<p class="hint">&larr; &rarr; · F fullscreen · N notes</p>
+<aside class="notes" id="notes"><h2>Speaker notes (N)</h2><div id="noteContent"></div></aside>
+</body>
+</html>
